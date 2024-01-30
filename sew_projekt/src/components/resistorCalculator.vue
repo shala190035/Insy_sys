@@ -57,37 +57,6 @@
   </script>
   
   <style scoped>
-  .resistor-calculator {
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
   
-  .input-section, .options-section, .result-section {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input, select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  p {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .input-group {
-    width: 100%;
-  }
   </style>
   
