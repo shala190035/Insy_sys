@@ -1,9 +1,7 @@
 <template>
-    <div class="resistor-calculator">
-      <h2 class="mt-4">Resistor Calculator</h2>
-  
+    <div class="resistor-calculator">  
       <div class="input-section mt-3">
-        <label for="resistorValues" class="form-label">Enter Resistor Values:</label>
+        <label for="resistorValues" class="form-label">Widerstands Wert in Ohm Ω :</label>
         <div v-for="(value, index) in resistorValuesArray" :key="index" class="input-group mb-2">
           <input v-model="resistorValuesArray[index]" class="form-control" placeholder="Enter Resistor Value" />
           <div class="input-group-append">
@@ -14,16 +12,16 @@
       </div>
   
       <div class="options-section mt-3">
-        <label for="circuitType" class="form-label">Choose Circuit Type:</label>
+        <label for="circuitType" class="form-label">Schaltungs Typ:</label>
         <select v-model="circuitType" id="circuitType" class="form-select">
-          <option value="series">Series</option>
+          <option value="series">Seriel</option>
           <option value="parallel">Parallel</option>
         </select>
       </div>
   
       <div class="result-section mt-3">
-        <label class="form-label">Result:</label>
-        <p class="h4">{{ calculateResult() }} Ohms</p>
+        <label class="form-label">Ergebnis:</label>
+        <p class="h4">{{ calculateResult() }} Ohm Ω </p>
       </div>
     </div>
   </template>
